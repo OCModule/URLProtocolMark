@@ -1,0 +1,22 @@
+{
+  "name": "URLProtocolMark",
+  "version": "0.1.0",
+  "summary": "A short description of URLProtocolMark.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/cnkcq/URLProtocolMark",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cnkcq": "chengquan.wang@ele.me"
+  },
+  "source": {
+    "git": "https://github.com/cnkcq/URLProtocolMark.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "URLProtocolMark/Classes/**/*"
+}

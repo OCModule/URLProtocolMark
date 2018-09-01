@@ -1,0 +1,16 @@
+PODS:
+  - URLProtocolMark (0.1.0)
+
+DEPENDENCIES:
+  - URLProtocolMark (from `../`)
+
+EXTERNAL SOURCES:
+  URLProtocolMark:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  URLProtocolMark: de8cdb345ce905c4c3b1cd8674aaed6e9c4ef44d
+
+PODFILE CHECKSUM: 6f4bcf04a68138f046056de258a102a1ad96849e
+
+COCOAPODS: 1.5.2
