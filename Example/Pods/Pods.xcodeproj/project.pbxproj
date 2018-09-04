@@ -8,16 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		00ACA1ADF3176138C213E299D93A0CBC /* Pods-URLProtocolMark_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A82BC3C613FA92683EFC00E8B7D1B1D6 /* Pods-URLProtocolMark_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5001D3965BB50CDBE350751195A42F3B /* URLProtocolMark-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EFE63C5CBA91651F13F0E9F45666C9 /* URLProtocolMark-dummy.m */; };
+		17261F1F2443E1A3A66D2FD3EB841BF8 /* PMURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 78B9112D07A87668EB3156B98F0AC1BC /* PMURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B2349CE8DD967608CD1AFE47C57F33E /* NSURLProtocol+WebKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 816F3FEB33DADD4860F8287658739404 /* NSURLProtocol+WebKit.m */; };
+		385593377F644823E618BDFFF2C60550 /* URLProtocolMark-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D14E56BD962822FF8F603A96EF17509B /* URLProtocolMark-dummy.m */; };
 		5078218E9C7A84F6CE4BEB4FD8660B2B /* Pods-URLProtocolMark_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA355A12CFE2329DAB09110F36E93A5 /* Pods-URLProtocolMark_Example-dummy.m */; };
 		52BB9C918F5F616F031634A0B4296BE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		660A49CC153D23856EEE6D378A4982E7 /* NSURLProtocol+WebKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0AF908825AFB7693EE8D50650E0A63 /* NSURLProtocol+WebKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70613EB4022CAA0E74E02F1DA7F50D51 /* Pods-URLProtocolMark_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33332911231B43F8BB50D4AFDA4ADA12 /* Pods-URLProtocolMark_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D20CD3D0875F08624BF5CC3A99D7474 /* URLProtocolMark-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8704DD01C67B7678CDE5679A07CD7764 /* URLProtocolMark-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B82D520BC67129C5206A5180E24D27D /* PMURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F1256C9ADC7A637EC82512212AD565E8 /* PMURLProtocol.m */; };
 		9422D06126214D2CB66261DABEC036E5 /* Pods-URLProtocolMark_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B41E9C2A98D692BCB5B297A46DFE3A3 /* Pods-URLProtocolMark_Tests-dummy.m */; };
 		9AB15B106D93585E1D1D74DEB0A24D0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		AA9A239B213AB04F00ACF470 /* PMURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9A2399213AB04F00ACF470 /* PMURLProtocol.h */; };
-		AA9A239C213AB04F00ACF470 /* PMURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9A239A213AB04F00ACF470 /* PMURLProtocol.m */; };
 		D05AF7908FCB7544A74DF2CA9C8DB6F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		DF25E7E833CF1CA847CC08A81727EB93 /* URLProtocolMark-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA02AE4EED7B482FDBAF9EE73D3FAE0 /* URLProtocolMark-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,42 +40,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0422DF7C19CF4F1FEA4B8BF76B471F28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07EFE63C5CBA91651F13F0E9F45666C9 /* URLProtocolMark-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "URLProtocolMark-dummy.m"; sourceTree = "<group>"; };
+		1B505D143C5AC8C2CDF37D06B8A4AABE /* URLProtocolMark.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = URLProtocolMark.modulemap; sourceTree = "<group>"; };
 		33332911231B43F8BB50D4AFDA4ADA12 /* Pods-URLProtocolMark_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLProtocolMark_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3EA355A12CFE2329DAB09110F36E93A5 /* Pods-URLProtocolMark_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLProtocolMark_Example-dummy.m"; sourceTree = "<group>"; };
-		3F8AD8883A7985E5D399D567E4A43E18 /* URLProtocolMark-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLProtocolMark-prefix.pch"; sourceTree = "<group>"; };
 		45588003284539D25A1D6C502A86FE9C /* Pods-URLProtocolMark_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLProtocolMark_Tests-resources.sh"; sourceTree = "<group>"; };
 		4948D3164CD74A36CBE20EC5ACBB85B7 /* Pods-URLProtocolMark_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URLProtocolMark_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4B0AF908825AFB7693EE8D50650E0A63 /* NSURLProtocol+WebKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLProtocol+WebKit.h"; path = "URLProtocolMark/Classes/NSURLProtocol+WebKit.h"; sourceTree = "<group>"; };
 		51A86B2A50034DEC225335286E7AC3BA /* Pods-URLProtocolMark_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLProtocolMark_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		539CE1F71A529CA5409EF2D457E6F554 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CF2BCADEDD891F3DA76C32ADEE6C53 /* Pods-URLProtocolMark_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLProtocolMark_Example-resources.sh"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5FBFC0E89160D5D396C2C8772E97EA37 /* Pods-URLProtocolMark_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLProtocolMark_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		674F5DFE5C46F5D132838EA9BE9C9D17 /* Pods-URLProtocolMark_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URLProtocolMark_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6BBB0ECEA18524D804C6678334C6092E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		76A422A8D75060785D2FFC54C8DF560E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		7A6A0FC1E7C8AFD298F2EA6D2ADE9D0F /* Pods_URLProtocolMark_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLProtocolMark_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F35A8D5797789474B07F388F499F8B /* URLProtocolMark-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLProtocolMark-prefix.pch"; sourceTree = "<group>"; };
+		78B9112D07A87668EB3156B98F0AC1BC /* PMURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMURLProtocol.h; path = URLProtocolMark/Classes/PMURLProtocol.h; sourceTree = "<group>"; };
+		7A6A0FC1E7C8AFD298F2EA6D2ADE9D0F /* Pods_URLProtocolMark_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_URLProtocolMark_Tests.framework; path = "Pods-URLProtocolMark_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B41E9C2A98D692BCB5B297A46DFE3A3 /* Pods-URLProtocolMark_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLProtocolMark_Tests-dummy.m"; sourceTree = "<group>"; };
-		7EA62C44866E08ADF821FF4A0A6FBFC3 /* URLProtocolMark.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = URLProtocolMark.modulemap; sourceTree = "<group>"; };
-		8704DD01C67B7678CDE5679A07CD7764 /* URLProtocolMark-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLProtocolMark-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		816F3FEB33DADD4860F8287658739404 /* NSURLProtocol+WebKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLProtocol+WebKit.m"; path = "URLProtocolMark/Classes/NSURLProtocol+WebKit.m"; sourceTree = "<group>"; };
+		87BA53B261A8D1AB8EF72FAEEE6157B8 /* URLProtocolMark.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URLProtocolMark.xcconfig; sourceTree = "<group>"; };
+		8C6F8DBD3C99C6FA27473104359B4EAB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A123632B2BB6D23F0EC74C607F053472 /* Pods-URLProtocolMark_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URLProtocolMark_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A32382EAFC50E1C943DF02A13B31EC93 /* Pods-URLProtocolMark_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLProtocolMark_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A3AC66868A1460ACC4190FB1F7EFC52B /* URLProtocolMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLProtocolMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3AC66868A1460ACC4190FB1F7EFC52B /* URLProtocolMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = URLProtocolMark.framework; path = URLProtocolMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A648B437D3ED187FC0CF9ADEB5821120 /* Pods-URLProtocolMark_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLProtocolMark_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A82BC3C613FA92683EFC00E8B7D1B1D6 /* Pods-URLProtocolMark_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLProtocolMark_Example-umbrella.h"; sourceTree = "<group>"; };
-		AA9A2399213AB04F00ACF470 /* PMURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PMURLProtocol.h; path = URLProtocolMark/Classes/PMURLProtocol.h; sourceTree = "<group>"; };
-		AA9A239A213AB04F00ACF470 /* PMURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PMURLProtocol.m; path = URLProtocolMark/Classes/PMURLProtocol.m; sourceTree = "<group>"; };
-		AFFB97B2402019E33464A8D608484F30 /* URLProtocolMark.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URLProtocolMark.xcconfig; sourceTree = "<group>"; };
-		B748C44DC08473AF131B05EE6A009720 /* URLProtocolMark.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = URLProtocolMark.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADA02AE4EED7B482FDBAF9EE73D3FAE0 /* URLProtocolMark-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLProtocolMark-umbrella.h"; sourceTree = "<group>"; };
+		AECB82EC968EB5D9A86F769ECE1B3D66 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B8219FFC3E88873CF0FB76BC4A49961A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A4484B869C572743238C5B556A4ECF /* Pods-URLProtocolMark_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLProtocolMark_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C346F2C4A697CCA5BADC6FCDE5D0EB93 /* Pods-URLProtocolMark_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-URLProtocolMark_Example.modulemap"; sourceTree = "<group>"; };
+		D14E56BD962822FF8F603A96EF17509B /* URLProtocolMark-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "URLProtocolMark-dummy.m"; sourceTree = "<group>"; };
+		D831E5D5C519EC79CB53BB64D23CB700 /* URLProtocolMark.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = URLProtocolMark.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D8D6902E47C894794121B26CC32936AA /* Pods-URLProtocolMark_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLProtocolMark_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DF18ACAC5FFD51CD96D5A198F71E6193 /* Pods-URLProtocolMark_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URLProtocolMark_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E2D1DFA7875502EEE28CB6F8E5FA06EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E967C1E9A0D907F92E007C9739E8AB4C /* Pods_URLProtocolMark_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLProtocolMark_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E967C1E9A0D907F92E007C9739E8AB4C /* Pods_URLProtocolMark_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_URLProtocolMark_Example.framework; path = "Pods-URLProtocolMark_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA50F6DBCF4BEAF9D86C8EDB013DEFDE /* Pods-URLProtocolMark_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-URLProtocolMark_Tests.modulemap"; sourceTree = "<group>"; };
+		F1256C9ADC7A637EC82512212AD565E8 /* PMURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PMURLProtocol.m; path = URLProtocolMark/Classes/PMURLProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,22 +136,26 @@
 			path = "Target Support Files/Pods-URLProtocolMark_Tests";
 			sourceTree = "<group>";
 		};
-		38860575E81E69ABBC5809266167C84E /* Development Pods */ = {
+		1B26D352A7CF674702ADBED387DBDBA1 /* URLProtocolMark */ = {
 			isa = PBXGroup;
 			children = (
-				BF929B25428C9ED40FAA216EBB9E81C9 /* URLProtocolMark */,
+				4B0AF908825AFB7693EE8D50650E0A63 /* NSURLProtocol+WebKit.h */,
+				816F3FEB33DADD4860F8287658739404 /* NSURLProtocol+WebKit.m */,
+				78B9112D07A87668EB3156B98F0AC1BC /* PMURLProtocol.h */,
+				F1256C9ADC7A637EC82512212AD565E8 /* PMURLProtocol.m */,
+				D05D7203F8F358EA9B7979E375BC9B38 /* Pod */,
+				AC3C533864773F4E65DADA99927ABA9C /* Support Files */,
 			);
-			name = "Development Pods";
+			name = URLProtocolMark;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		513362ACC22A54464568B03DC079634A /* Pod */ = {
+		2F74BF5B8272FC31703BA898A55EAFC7 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				76A422A8D75060785D2FFC54C8DF560E /* LICENSE */,
-				6BBB0ECEA18524D804C6678334C6092E /* README.md */,
-				B748C44DC08473AF131B05EE6A009720 /* URLProtocolMark.podspec */,
+				1B26D352A7CF674702ADBED387DBDBA1 /* URLProtocolMark */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		5C845CF5C05CB6B422A6A8E6A2715151 /* Targets Support Files */ = {
@@ -171,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				38860575E81E69ABBC5809266167C84E /* Development Pods */,
+				2F74BF5B8272FC31703BA898A55EAFC7 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				05CEC02850883B282603D3C89B9DEACD /* Products */,
 				5C845CF5C05CB6B422A6A8E6A2715151 /* Targets Support Files */,
@@ -196,15 +204,15 @@
 			path = "Target Support Files/Pods-URLProtocolMark_Example";
 			sourceTree = "<group>";
 		};
-		A8DAC8E5E01CA094EEE6B2BA77A0A1DE /* Support Files */ = {
+		AC3C533864773F4E65DADA99927ABA9C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0422DF7C19CF4F1FEA4B8BF76B471F28 /* Info.plist */,
-				7EA62C44866E08ADF821FF4A0A6FBFC3 /* URLProtocolMark.modulemap */,
-				AFFB97B2402019E33464A8D608484F30 /* URLProtocolMark.xcconfig */,
-				07EFE63C5CBA91651F13F0E9F45666C9 /* URLProtocolMark-dummy.m */,
-				3F8AD8883A7985E5D399D567E4A43E18 /* URLProtocolMark-prefix.pch */,
-				8704DD01C67B7678CDE5679A07CD7764 /* URLProtocolMark-umbrella.h */,
+				B8219FFC3E88873CF0FB76BC4A49961A /* Info.plist */,
+				1B505D143C5AC8C2CDF37D06B8A4AABE /* URLProtocolMark.modulemap */,
+				87BA53B261A8D1AB8EF72FAEEE6157B8 /* URLProtocolMark.xcconfig */,
+				D14E56BD962822FF8F603A96EF17509B /* URLProtocolMark-dummy.m */,
+				67F35A8D5797789474B07F388F499F8B /* URLProtocolMark-prefix.pch */,
+				ADA02AE4EED7B482FDBAF9EE73D3FAE0 /* URLProtocolMark-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/URLProtocolMark";
@@ -218,30 +226,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF929B25428C9ED40FAA216EBB9E81C9 /* URLProtocolMark */ = {
+		D05D7203F8F358EA9B7979E375BC9B38 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				513362ACC22A54464568B03DC079634A /* Pod */,
-				A8DAC8E5E01CA094EEE6B2BA77A0A1DE /* Support Files */,
-				AA9A2399213AB04F00ACF470 /* PMURLProtocol.h */,
-				AA9A239A213AB04F00ACF470 /* PMURLProtocol.m */,
+				AECB82EC968EB5D9A86F769ECE1B3D66 /* LICENSE */,
+				8C6F8DBD3C99C6FA27473104359B4EAB /* README.md */,
+				D831E5D5C519EC79CB53BB64D23CB700 /* URLProtocolMark.podspec */,
 			);
-			name = URLProtocolMark;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		227B8A758A592C3CFEB34B2C9E4FE395 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D20CD3D0875F08624BF5CC3A99D7474 /* URLProtocolMark-umbrella.h in Headers */,
-				AA9A239B213AB04F00ACF470 /* PMURLProtocol.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C26B0CCE1CC05C66AF745048A96B619A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +252,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				70613EB4022CAA0E74E02F1DA7F50D51 /* Pods-URLProtocolMark_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDE719AB9845CC6B05CCC82B0F1D937 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660A49CC153D23856EEE6D378A4982E7 /* NSURLProtocol+WebKit.h in Headers */,
+				17261F1F2443E1A3A66D2FD3EB841BF8 /* PMURLProtocol.h in Headers */,
+				DF25E7E833CF1CA847CC08A81727EB93 /* URLProtocolMark-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +290,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74A609F3CE0AD79E7B83FA790B8EEB65 /* Build configuration list for PBXNativeTarget "URLProtocolMark" */;
 			buildPhases = (
-				A6A22BAA286942474769022A62CAB57E /* Sources */,
+				4A6A01B63550321B197707574732AD81 /* Sources */,
 				14A929D54DA523956B173BC34E9A063E /* Frameworks */,
-				227B8A758A592C3CFEB34B2C9E4FE395 /* Headers */,
+				CEDE719AB9845CC6B05CCC82B0F1D937 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -351,12 +358,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6A22BAA286942474769022A62CAB57E /* Sources */ = {
+		4A6A01B63550321B197707574732AD81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA9A239C213AB04F00ACF470 /* PMURLProtocol.m in Sources */,
-				5001D3965BB50CDBE350751195A42F3B /* URLProtocolMark-dummy.m in Sources */,
+				1B2349CE8DD967608CD1AFE47C57F33E /* NSURLProtocol+WebKit.m in Sources */,
+				7B82D520BC67129C5206A5180E24D27D /* PMURLProtocol.m in Sources */,
+				385593377F644823E618BDFFF2C60550 /* URLProtocolMark-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +430,7 @@
 		};
 		6099166D8197871EBB993FA54A68B3F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFFB97B2402019E33464A8D608484F30 /* URLProtocolMark.xcconfig */;
+			baseConfigurationReference = 87BA53B261A8D1AB8EF72FAEEE6157B8 /* URLProtocolMark.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -549,7 +557,7 @@
 		};
 		9D62A7D20D7DE61530D75D7BA2EE036C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFFB97B2402019E33464A8D608484F30 /* URLProtocolMark.xcconfig */;
+			baseConfigurationReference = 87BA53B261A8D1AB8EF72FAEEE6157B8 /* URLProtocolMark.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

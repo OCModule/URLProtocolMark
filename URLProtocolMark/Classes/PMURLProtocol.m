@@ -34,10 +34,16 @@ static NSString *const PROTOCOL_Key = @"LPDS_URL_PROTOCOL_Key";
     if ([NSURLProtocol propertyForKey:PROTOCOL_Key inRequest:request]) {
         return NO;
     }
-    NSString *scheme = [[request URL] scheme];
-    if ([scheme caseInsensitiveCompare:@"http"] == NSOrderedSame ||
-        [scheme caseInsensitiveCompare:@"https"] == NSOrderedSame) {
-        return YES;
+//    NSString *scheme = [[request URL] scheme];
+//    if ([scheme caseInsensitiveCompare:@"http"] == NSOrderedSame ||
+//        [scheme caseInsensitiveCompare:@"https"] == NSOrderedSame) {
+//        return YES;
+//    }
+    NSString *host = [[request URL] host] ?: @"";
+    for (NSString *domain in [self filterSites]) {
+        if ([domain containsString:host]) {
+            return YES;
+        }
     }
     return NO;
 }
@@ -64,7 +70,9 @@ static NSString *const PROTOCOL_Key = @"LPDS_URL_PROTOCOL_Key";
     [self.task cancel];
 }
 
-// 将拦截后的请求结构返回到原来的请求结果里去
+# pragma mark: NSURLSessionDelegate
+
+// 将拦截后的请求结果返回到原来的请求结果里去
 -(void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
     if (error) {
         [self.client URLProtocol:self didFailWithError:error];
@@ -87,4 +95,15 @@ static NSString *const PROTOCOL_Key = @"LPDS_URL_PROTOCOL_Key";
     completionHandler(proposedResponse);
 }
 
+// url 白名单
++ (NSArray<NSString *> *)filterSites {
+    return @[
+             @"https://www.google.com/",
+             @"https://www.baidu.com/"
+            ];
+}
+
+
 @end
+
+/// https://blog.moecoder.com/2016/10/26/support-nsurlprotocol-in-wkwebview/

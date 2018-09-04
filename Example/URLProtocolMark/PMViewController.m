@@ -7,6 +7,8 @@
 //
 
 #import "PMViewController.h"
+#import "PMWebViewController.h"
+#import "PMWKWebViewController.h"
 
 @interface PMViewController ()
 
@@ -17,13 +19,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"web" style:UIBarButtonItemStylePlain target:self action:@selector(pushWeb)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"wkweb" style:UIBarButtonItemStylePlain target:self action:@selector(pushwkWeb)];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)pushwkWeb {
+    PMWKWebViewController *wkweb = [[PMWKWebViewController alloc] init];
+    [self.navigationController pushViewController:wkweb animated:YES];
+}
+
+- (void)pushWeb {
+    PMWebViewController *web = [[PMWebViewController alloc] init];
+    [self.navigationController pushViewController:web animated:YES];
 }
 
 @end

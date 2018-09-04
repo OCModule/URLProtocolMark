@@ -23,6 +23,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AAAEB2D9213E28600004BF43 /* PMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB2D8213E28600004BF43 /* PMWebViewController.m */; };
+		AAAEB2DC213E286F0004BF43 /* PMWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB2DB213E286F0004BF43 /* PMWKWebViewController.m */; };
 		D05899E268AE0AC6FB8363F4 /* Pods_URLProtocolMark_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE86FCDF615379C1DE9C594 /* Pods_URLProtocolMark_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18AADD5D534057D150207829 /* URLProtocolMark.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = URLProtocolMark.podspec; path = ../URLProtocolMark.podspec; sourceTree = "<group>"; };
+		18AADD5D534057D150207829 /* URLProtocolMark.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = URLProtocolMark.podspec; path = ../URLProtocolMark.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4CE86FCDF615379C1DE9C594 /* Pods_URLProtocolMark_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLProtocolMark_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* URLProtocolMark_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLProtocolMark_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,9 +66,13 @@
 		98EE754C234A1F25B5A034C4 /* Pods-URLProtocolMark_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLProtocolMark_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URLProtocolMark_Tests/Pods-URLProtocolMark_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A677245D4FA3AAAB7532139 /* Pods-URLProtocolMark_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLProtocolMark_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-URLProtocolMark_Tests/Pods-URLProtocolMark_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9E048BFFB484BF46BC3340BF /* Pods-URLProtocolMark_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLProtocolMark_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URLProtocolMark_Example/Pods-URLProtocolMark_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AABA05BC9560492267FA5EF4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AAAEB2D7213E28600004BF43 /* PMWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMWebViewController.h; sourceTree = "<group>"; };
+		AAAEB2D8213E28600004BF43 /* PMWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMWebViewController.m; sourceTree = "<group>"; };
+		AAAEB2DA213E286F0004BF43 /* PMWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMWKWebViewController.h; sourceTree = "<group>"; };
+		AAAEB2DB213E286F0004BF43 /* PMWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMWKWebViewController.m; sourceTree = "<group>"; };
+		AABA05BC9560492267FA5EF4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D86128EAB4FAC938CAF5CEA9 /* Pods_URLProtocolMark_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLProtocolMark_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE2B6ED590377F65A6D2AD3B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FE2B6ED590377F65A6D2AD3B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,10 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				AAAEB2D7213E28600004BF43 /* PMWebViewController.h */,
+				AAAEB2D8213E28600004BF43 /* PMWebViewController.m */,
+				AAAEB2DA213E286F0004BF43 /* PMWKWebViewController.h */,
+				AAAEB2DB213E286F0004BF43 /* PMWKWebViewController.m */,
 			);
 			name = "Example for URLProtocolMark";
 			path = URLProtocolMark;
@@ -357,6 +367,8 @@
 			files = (
 				6003F59E195388D20070C39A /* PMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* PMViewController.m in Sources */,
+				AAAEB2D9213E28600004BF43 /* PMWebViewController.m in Sources */,
+				AAAEB2DC213E286F0004BF43 /* PMWKWebViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
