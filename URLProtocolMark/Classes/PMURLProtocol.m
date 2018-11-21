@@ -30,6 +30,7 @@ static NSString *const PROTOCOL_Key = @"LPDS_URL_PROTOCOL_Key";
 }
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
+    // 使用外部参数时记得 校验参数 以避免 bug
     // 过滤已经拦截过的 request 防止死循环
     if ([NSURLProtocol propertyForKey:PROTOCOL_Key inRequest:request]) {
         return NO;
@@ -67,7 +68,10 @@ static NSString *const PROTOCOL_Key = @"LPDS_URL_PROTOCOL_Key";
 }
 
 - (void)stopLoading {
-    [self.task cancel];
+    if (self.task) {
+        [self.task cancel];
+        self.task = nil;
+    }
 }
 
 # pragma mark: NSURLSessionDelegate
